@@ -1,0 +1,15 @@
+@import 'base/fonts';
+@import 'base/buttons';
+
+* {
+    font-family: 'MyriadPro';
+}
+body {
+    background-color: #ebe9e9;
+}
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+@import 'block/promo';
