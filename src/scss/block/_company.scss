@@ -1,0 +1,34 @@
+.company {
+    .wrapper {
+        padding: 0 188px 174px 186px;
+    }
+    .brands {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 101px;
+        // padding: 15px 84px 15px 56px;
+        background-color: #ffffff;
+        &__item {
+            list-style-type: none;
+            border-right: solid 1px rgba($color: #e8e7e7, $alpha: 1);
+            padding-right: 64px;
+            width: 135px;
+            height: 35px;
+            &:last-child {
+                border-right: none;
+                padding-right: 0;
+            }
+        }
+        &__link {
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #232323;
+            text-decoration: none;
+        }
+    }
+}

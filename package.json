@@ -32,7 +32,8 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1"
+    "@babel/polyfill": "^7.12.1",
+    "normalize.css": "^8.0.1"
   },
   "repository": {
     "type": "git",

@@ -3,6 +3,7 @@
 
 * {
     font-family: 'MyriadPro';
+    
 }
 body {
     background-color: #ebe9e9;
@@ -14,3 +15,6 @@ body {
 
 @import 'block/promo';
 @import 'block/main';
+@import 'block/company';
+@import 'block/news';
+@import 'block/recommend';
