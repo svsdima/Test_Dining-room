@@ -302,7 +302,7 @@ body {
   width: 902px;
   height: 476px;
   margin-left: 20px;
-  padding: 0 82px 0 68px;
+  padding: 2px 82px 0 68px;
   background-color: #232323; }
   .main .portfolio__wrapper {
     display: flex;
@@ -377,6 +377,10 @@ body {
       text-align: left;
       color: #ffaf2d;
       text-decoration: none; }
+
+.swiper-container {
+  width: 902px;
+  height: 476px; }
 
 .company .wrapper {
   padding: 0 188px 174px 186px; }

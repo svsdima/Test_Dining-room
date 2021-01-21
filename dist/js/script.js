@@ -90,10 +90,85 @@
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/slider */ "./src/js/modules/slider.js");
+/* harmony import */ var _modules_modals__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modals */ "./src/js/modules/modals.js");
 
 
+window.addEventListener('DOMContentLoaded', () => {
+  'use strict';
+
+  Object(_modules_slider__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  Object(_modules_modals__WEBPACK_IMPORTED_MODULE_1__["default"])();
+});
+
+/***/ }),
+
+/***/ "./src/js/modules/modals.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/modals.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const modal = () => {
+  function bindModal(triggerSelector, modalSelector) {
+    const trigger = document.querySelectorAll(triggerSelector),
+          modal = document.querySelector(modalSelector);
+    trigger.forEach(item => {
+      item.addEventListener('click', e => {
+        if (e.targer) {
+          e.preventDefault();
+        }
+
+        modal.style.display = 'none';
+      });
+    });
+  }
+
+  bindModal('.button__search', '.types');
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (modal);
+
+/***/ }),
+
+/***/ "./src/js/modules/slider.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/slider.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const slider = () => {
+  function swiper(swiper_name) {
+    const wrapper = document.querySelector(swiper_name);
+    new Swiper(wrapper, {
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      animating: true,
+      speed: 400,
+      autoplay: {
+        delay: 5000
+      }
+    });
+  }
+
+  swiper('.swiper-container');
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (slider);
 
 /***/ })
 

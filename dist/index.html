@@ -6,6 +6,7 @@
     <title>Столовая.РУ</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">   
 </head>
 <body>
     <section class="promo">
@@ -222,24 +223,82 @@
                     </ul>
                 </nav>
             </div>
-            <div class="portfolio">
-                <div class="portfolio__head">Портфолио</div>
-                <div class="portfolio__wrapper">
-                    <div>
-                        <div class="portfolio__subhead">
-                            НИИ скорой помощи 
-                            им. Н.В. Склифосовского
-                            <span>Оборудование для пищеблоков</span>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="portfolio">
+                            <div class="portfolio__head">Портфолио</div>
+                            <div class="portfolio__wrapper">
+                                <div>
+                                    <div class="portfolio__subhead">
+                                        НИИ скорой помощи 
+                                        им. Н.В. Склифосовского
+                                        <span>Оборудование для пищеблоков</span>
+                                    </div>
+                                    <button class="button button__portfolio">
+                                        <a href="#">Подробнее</a>
+                                    </button>
+                                </div>
+                                <div class="portfolio__img">
+                                    <img src="img/catering_equipment.png" alt="catering_equipment">
+                                </div>
+                            </div>
                         </div>
-                        <button class="button button__portfolio">
-                            <a href="#">Подробнее</a>
-                        </button>
                     </div>
-                    <div class="portfolio__img">
-                        <img src="img/catering_equipment.png" alt="catering_equipment">
+                    <div class="swiper-slide">
+                        <div class="portfolio">
+                            <div class="portfolio__head">Портфолио</div>
+                            <div class="portfolio__wrapper">
+                                <div>
+                                    <div class="portfolio__subhead">
+                                        НИИ скорой помощи 
+                                        им. Н.В. Склифосовского
+                                        <span>Оборудование для пищеблоков</span>
+                                    </div>
+                                    <button class="button button__portfolio">
+                                        <a href="#">Подробнее</a>
+                                    </button>
+                                </div>
+                                <div class="portfolio__img">
+                                    <img src="img/catering_equipment.png" alt="catering_equipment">
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="portfolio">
+                            <div class="portfolio__head">Портфолио</div>
+                            <div class="portfolio__wrapper">
+                                <div>
+                                    <div class="portfolio__subhead">
+                                        НИИ скорой помощи 
+                                        им. Н.В. Склифосовского
+                                        <span>Оборудование для пищеблоков</span>
+                                    </div>
+                                    <button class="button button__portfolio">
+                                        <a href="#">Подробнее</a>
+                                    </button>
+                                </div>
+                                <div class="portfolio__img">
+                                    <img src="img/catering_equipment.png" alt="catering_equipment">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    ...
                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination">+</div>
+<!-- 
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <div class="swiper-scrollbar"></div> -->
             </div>
+ 
             <div class="sale">
                 <div class="sale__gift">
                     <img src="img/giftbox.png" alt="giftbox">
@@ -595,5 +654,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 </html>
