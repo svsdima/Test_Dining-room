@@ -1,0 +1,55 @@
+.footer {
+    padding: 40px 277px 40px 265px;
+    background-color: #191919;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__img {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            margin-right: 17px;
+            img {
+                width: 100%;
+            }
+        }
+        &__head {
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.16;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+        &__subhead {
+            font-family: $second_font;
+            font-size: 15.5px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.16;
+            letter-spacing: 0.16px;
+            text-align: left;
+            color: #787878;
+        }
+    }
+    &__right {
+        font-family: $second_font;
+        font-size: 18px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.61;
+        letter-spacing: 0.18px;
+        text-align: left;
+        color: #ffffff;
+    }
+}

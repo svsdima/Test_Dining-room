@@ -10,7 +10,7 @@
         line-height: normal;
         letter-spacing: normal;
         text-align: center;
-        color: #121212;
+        color: $main_color;
     }
     &__subhead {
         max-width: 680px;
@@ -47,7 +47,7 @@
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: center;
-                color: #121212;
+                color: $main_color;
                 text-transform: uppercase;
             }
             &__subhead {
@@ -60,7 +60,7 @@
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: center;
-                color: #121212;
+                color: $main_color;
             }
             &__text {
                 margin-top: 27px;
@@ -91,6 +91,8 @@
             height: 420px;
             // padding: 7px 143px 0 0;
             background-color: #232323;
+            text-decoration: none;
+            position: relative;
             &__head {
                 font-family: $second_font;
                 font-size: 20px;
@@ -132,6 +134,7 @@
             height: 316px;
             background-color: #ffffff;
             // padding: 96px 341.4px 67px 62.8px;
+            text-decoration: none;
             &__head {
                 font-family: $second_font;
                 font-size: 20px;
@@ -141,7 +144,7 @@
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: left;
-                color: #121212;
+                color: $main_color;
             }
             &__subhead {
                 font-size: 30px;
@@ -151,7 +154,7 @@
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: left;
-                color: #121212;
+                color: $main_color;
             }
             &__text {
                 font-family: $second_font;
@@ -163,6 +166,12 @@
                 letter-spacing: normal;
                 text-align: left;
                 color: #777777;
+            }
+            &__img {
+                margin: 0 0 0 0;
+                img {
+                    width: 100%;
+                }
             }
         }
     }

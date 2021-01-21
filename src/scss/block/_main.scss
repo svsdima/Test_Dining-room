@@ -120,13 +120,13 @@
             font-size: 18px;
             line-height: 1.67;
             font-weight: normal;
-            color: #121212;
+            color: $main_color;
         }
         &__subhead {
             font-size: 40px;
             font-weight: normal;
             line-height: 1;
-            color: #121212;
+            color: $main_color;
         }
         &__catalog {
             margin-top: 20px;

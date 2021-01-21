@@ -79,6 +79,21 @@
     cursor: pointer;
     color: #3376c2; }
 
+.button__more {
+  margin-top: 43px;
+  width: 49px;
+  height: 49px;
+  border-radius: 100%;
+  background-color: #232323;
+  font-size: 24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff; }
+
 * {
   font-family: 'MyriadPro'; }
 
@@ -583,7 +598,9 @@ body {
     align-items: center;
     width: 784px;
     height: 420px;
-    background-color: #232323; }
+    background-color: #232323;
+    text-decoration: none;
+    position: relative; }
     .recommend__right__up__head {
       font-family: MyriadPro-SemiExt;
       font-size: 20px;
@@ -619,7 +636,8 @@ body {
     align-items: center;
     width: 786px;
     height: 316px;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    text-decoration: none; }
     .recommend__right__down__head {
       font-family: MyriadPro-SemiExt;
       font-size: 20px;
@@ -649,3 +667,193 @@ body {
       letter-spacing: normal;
       text-align: left;
       color: #777777; }
+    .recommend__right__down__img {
+      margin: 0 0 0 0; }
+      .recommend__right__down__img img {
+        width: 100%; }
+
+.about-company {
+  padding: 0 307px 264px 262px; }
+  .about-company__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .about-company__content__head {
+      font-size: 40px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #121212; }
+    .about-company__content__subhead {
+      font-family: MyriadPro-SemiExt;
+      font-size: 40px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #121212; }
+    .about-company__content__left {
+      width: 831px;
+      height: 516px; }
+      .about-company__content__left p {
+        font-family: MyriadPro-SemiExt;
+        font-size: 18px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #121212; }
+  .about-company__logo {
+    margin-top: 100px; }
+    .about-company__logo__image {
+      width: 151px;
+      height: 151px;
+      position: relative; }
+      .about-company__logo__image img {
+        width: 100%; }
+    .about-company__logo__head {
+      margin-top: 33px;
+      font-size: 40px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #121212; }
+      .about-company__logo__head span {
+        text-transform: uppercase; }
+    .about-company__logo__subhead {
+      font-family: MyriadPro-SemiExt;
+      font-size: 16px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #777777; }
+  .about-company__company {
+    margin-top: 33px; }
+    .about-company__company__head {
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #121212; }
+    .about-company__company__subhead {
+      font-family: MyriadPro-SemiExt;
+      font-size: 18px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      text-align: left;
+      color: #777777; }
+  .about-company__info {
+    margin-top: 33px; }
+    .about-company__info p {
+      font-family: MyriadPro-SemiExt;
+      font-size: 18px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #121212; }
+
+.contacts {
+  position: relative;
+  background-color: #232323; }
+  .contacts__titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 93px 264px 0 262px; }
+    .contacts__titles__list p {
+      font-family: MyriadPro-SemiExt;
+      font-size: 24px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #777777; }
+  .contacts__item {
+    list-style-type: none;
+    padding-left: 0; }
+  .contacts__link {
+    font-family: MyriadPro-SemiExt;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none; }
+    .contacts__link a {
+      text-decoration: none;
+      color: #ffffff; }
+
+.footer {
+  padding: 40px 277px 40px 265px;
+  background-color: #191919; }
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .footer__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer__left__img {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      margin-right: 17px; }
+      .footer__left__img img {
+        width: 100%; }
+    .footer__left__head {
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.16;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff; }
+    .footer__left__subhead {
+      font-family: MyriadPro-SemiExt;
+      font-size: 15.5px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.16;
+      letter-spacing: 0.16px;
+      text-align: left;
+      color: #787878; }
+  .footer__right {
+    font-family: MyriadPro-SemiExt;
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.61;
+    letter-spacing: 0.18px;
+    text-align: left;
+    color: #ffffff; }
