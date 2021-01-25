@@ -1,0 +1,194 @@
+@media (max-width: 1600px) {
+    .promo {
+        .menu {
+            &__item {
+                &:nth-child(3), &:nth-child(7) {
+                    padding-right: 20px;
+                }
+            }
+            &__link {
+                font-size: 15px;
+            }
+        }
+    }
+    .main {
+        .offers {
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 1450px) {
+    .promo {
+        .menu {
+            &__item {
+                &:nth-child(3), &:nth-child(7) {
+                    padding-right: 15px;
+                }
+            }
+            &__link {
+                font-size: 13px;
+            }
+        }
+        .phone {
+            &__number {
+                display: none;
+            }
+        }
+    }
+    .news {
+        &__content {
+            
+        }
+        &__right {
+            &__item {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .promo {
+        .menu {
+            &__item {
+                &:nth-child(3), &:nth-child(7) {
+                    padding-right: 10px;
+                }
+            }
+            &__link {
+                font-size: 12px;
+            }
+        }
+        .email {
+            &__info {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 991px) {
+    .promo {
+        .menu {
+            &__item {
+                &:nth-child(3), &:nth-child(7) {
+                    padding-right: none;
+                }
+            }
+            &__link {
+                font-size: 11px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .promo {
+        display: none;
+        .menu {
+            display: none;
+        }
+    }
+    .header {
+        display: none;
+    }
+    .equipment {
+        display: none;
+    }
+    .promo-mobile {
+        display: block;
+        &__right {
+            &__link {
+                margin-right: 20px;
+            }
+        }
+    }
+    .main {
+        &__wrapper {
+            flex-direction: column;
+            .offers {
+                display: none;
+                width: 95%;
+                margin-bottom: 30px;
+                
+            }
+            .swiper-container {
+                width: 100%;
+            }
+            .sale {
+                width: 95%;
+                height: 476px;
+                &__gift {
+                    padding-top: 83px;
+                }
+            }
+        }
+    }
+    .company {
+        .wrapper {
+            .brands {
+                // display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                height: 520px;
+                // grid-gap: 1rem;
+                // margin: 0 auto;
+                // flex-flow: wrap;
+                // flex-direction: column;
+                // justify-content: center;
+                &__item {
+                    display: block;
+                    margin-right: 10px;
+                    margin: 0 auto ;
+                    margin-top: 60px;
+                }
+            }
+        }
+    }
+    .news {
+        display: none;
+    }
+    .recommend {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__left__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 784px;
+        }
+    }
+    .about-company {
+        &__content {
+            flex-direction: column;
+            &__left {
+                padding-right: 0;
+            }
+            
+        }
+    }
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__left {
+            &__img {
+                width: 88px;
+                height: 88px;
+            }
+            &__head {
+                font-size: 50px;
+            }
+            &__subhead {
+                font-size: 30px;
+            }
+        }
+        &__right {
+            font-size: 40px;
+            margin-top: 20px;
+        }
+    }
+}

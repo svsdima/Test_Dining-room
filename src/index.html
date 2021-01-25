@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Столовая.РУ</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
       
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <nav>
                 <ul class="menu">
@@ -61,252 +62,390 @@
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">
-                        <img class="email" src="img/head/email.png" alt="email">
-                        info@stolovay.ru
+                            <div class="email">
+                                <img class="email__img" src="img/head/email.png" alt="email">
+                                <div class="email__info">info@stolovay.ru</div>
+                            </div>
+                        
                         </a>
                     </li>
-                    <li class="menu__item"><a href="#" class="menu__link">
-                        <img class="phone" src="img/head/phone.png" alt="phone">
-                        8 495 790-72-05
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <div class="phone">
+                                <img class="phone__img" src="img/head/phone.png" alt="phone">
+                                <div class="phone__number">
+                                    8 495 790-72-05
+                                </div>
+                            </div>
                         </a>
                     </li>
                 </ul>
             </nav>
             <button class="button button__copy">Скопировать</button>
-            <header class="header">
-                <a href="#" class="header__logo">
-                    <img src="img/logo.png" alt="logo">
-                    <div>Столовая.<span>ру</span></div>
-                </a>
+        </div>
+    </section>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="img/logo_header.png" alt="logo_header">
+                    </a>
+                </div>
                 <form class="header__search" action="">
-                    <button class="button button__all">
-                        Все
-                        <img src="img/drop-down-arrow.svg" alt="drop-down-arrow">
-                    </button>
+                    <div class="header__search__categories">
+                        <div class="header__search__categories__text">
+                            Все
+                        <!-- <img src="img/drop-down-arrow.svg" alt="drop-down-arrow"> -->
+                        ::after
+                        </div>    
+                    </div>
                     <input type="text" placeholder="Search">
                     <button class="button button__search">
                         <img src="img/loupe.png" alt="loupe">
                     </button>
                 </form>
                 <a href="#" class="header__portal">
-                    <img src="img/portal.png" alt="portal">
-                    <span>Мы на портале поставщиков</span>
+                    <div class="header__portal__img">
+                        <img src="img/portal.png" alt="portal">
+                    </div>
+                    <div class="header__portal__text">
+                        <p>Мы на портале</p>
+                        <p>поставщиков</p>
+                    </div>
                 </a>
                 <a href="#" class="header__shopping">
-                    <img src="img/online-shopping-cart.png" alt="online-shopping-cart">
-                    <span>Сумма 150 000 руб.</span>
+                    <div class="header__shopping__left">
+                        <span class="shopping__left__count">0</span>
+                        <div class="shopping__left__img">
+                            <img src="img/online-shopping-cart.png" alt="online-shopping-cart">
+                        </div>
+                    </div>
+                    <div class="header__shopping__right">
+                        <div class="header__shopping__right__summ">
+                            <span>Сумма</span>
+                        </div>
+                        <div class="header__shopping__right__number">
+                            <span>150.000 руб</span>
+                        </div>
+                    </div>
                 </a>
-            </header>
-            <nav>
-                <ul class="types">
-                    <li class="types__item">
-                        <a href="#" class="types__link">
-                        <img src="img/types/thermal.png" alt="thermal">
-                        Тепловое
-                        </a>
-                    </li>
-                    <li class="types__item">
-                        <a href="#" class="types__link">
-                        <img src="img/types/refrigeration.png" alt="refrigeration">
-                        Холодильное
-                        </a>
-                    </li>
-                    <li class="types__item">
-                        <a href="#" class="types__link">
-                        <img src="img/types/electromechanical.png" alt="electromechanical">
-                        Электромеханическое
-                        </a>
-                    </li>
-                    <li class="types__item">
-                        <a href="#" class="types__link">
-                        <img src="img/types/dishwasher.png" alt="dishwasher">
-                        Посудомоечное
-                        </a>
-                    </li>
-                    <li class="types__item">
-                        <a href="#" class="types__link">
-                        <img src="img/types/bakery.png" alt="bakery">
-                        Хлебопекарное
-                        </a>
-                    </li>
-                    <li class="types__item">
-                        <a href="#" class="types__link">
-                        <img src="img/types/distribution_lines.png" alt="distribution_lines">
-                        Линии раздачи
-                        </a>
-                    </li>
-                    <li class="types__item">
-                        <a href="#" class="types__link">
-                        <img src="img/types/neutral.png" alt="neutral">
-                        Нейтральное
-                        </a>
-                    </li>
-                    <li class="types__item">
-                        <a href="#" class="types__link">
-                        <img src="img/types/for_fast_food.png" alt="for_fast_food">
-                        Для фаст фуда
-                        </a>
-                    </li>
-                    <li class="types__item">
-                        <a href="#" class="types__link">
-                        <img src="img/types/for_halls.png" alt="for_halls">
-                        Для залов
-                        </a>
-                    </li>
-                    <li class="types__item">
-                        <a href="#" class="types__link">
-                        <img src="img/types/auxiliary.png" alt="auxiliary">
-                        Вспомогательное
-                        </a>
-                    </li>
-                    <li class="types__item">
-                        <a href="#" class="types__link">
-                        <img src="img/types/for_shops.png" alt="for_shops">
-                        Для магазинов
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            </div>
+        </div>
+    </header>
+    <section class="equipment">
+        <div class="container">
+            <div class="types">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="types__item">
+                            <a href="#" class="types__link">
+                            <div class="types__link__img">
+                                <img src="img/types/thermal.png" alt="thermal">
+                            </div>
+                            <span>Тепловое</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="types__item">
+                            <a href="#" class="types__link">
+                            <div class="types__link__img">
+                                <img src="img/types/refrigeration.png" alt="refrigeration">
+                            </div>
+                            <span>Холодильное</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="types__item">
+                            <a href="#" class="types__link">
+                            <div class="types__link__img">
+                                <img src="img/types/electromechanical.png" alt="electromechanical">
+                            </div>
+                            <span>Электромеханическое</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="types__item">
+                            <a href="#" class="types__link">
+                            <div class="types__link__img">
+                                <img src="img/types/dishwasher.png" alt="dishwasher">
+                            </div>
+                            <span>Посудомоечное</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="types__item">
+                            <a href="#" class="types__link">
+                            <div class="types__link__img">
+                                <img src="img/types/bakery.png" alt="bakery">
+                            </div>
+                            <span>Хлебопекарное</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="types__item">
+                            <a href="#" class="types__link">
+                            <div class="types__link__img">
+                                <img src="img/types/distribution_lines.png" alt="distribution_lines">
+                            </div>
+                            <span>Линии раздачи</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="types__item">
+                            <a href="#" class="types__link">
+                            <div class="types__link__img">
+                                <img src="img/types/neutral.png" alt="neutral">
+                            </div>
+                            <span>Нейтральное</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="types__item">
+                            <a href="#" class="types__link">
+                            <div class="types__link__img">
+                                <img src="img/types/for_fast_food.png" alt="for_fast_food">
+                            </div>
+                            <span>Для фаст фуда</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="types__item">
+                            <a href="#" class="types__link">
+                            <div class="types__link__img">
+                                <img src="img/types/for_halls.png" alt="for_halls">
+                            </div>
+                            <span>Для залов</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="types__item">
+                            <a href="#" class="types__link">
+                            <div class="types__link__img">
+                                <img src="img/types/auxiliary.png" alt="auxiliary">
+                            </div>
+                            <span>Вспомогательное</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="types__item">
+                            <a href="#" class="types__link">
+                            <div class="types__link__img">
+                                <img src="img/types/for_shops.png" alt="for_shops">
+                            </div>
+                            <span>Для магазинов</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    
+
+    <section class="promo-mobile">
+        <div class="container-2">
+            <div class="promo-mobile__wrapper">
+                <div class="promo-mobile__left">
+                    <button class="button button__hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <a href="#" class="promo-mobile__logo">
+                        <img class="promo-mobile__logo__img" src="img/logo.png" alt="logo">
+                        <div class="promo-mobile__text">
+                            <p class="promo-mobile__text__header">Столовая.<span>ру</span></p>
+                            <p class="promo-mobile__text__subheader">Создание  пищеблоков</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="promo-mobile__right">
+                    <a href="#" class="promo-mobile__right__link">
+                        <img src="img/mobile/mobile_search.png" alt="mobile_search">
+                    </a>
+                    <a href="#" class="promo-mobile__right__link">
+                        <img src="img/mobile/mobile_phone.png" alt="mobile_phone">
+                    </a>
+                    <a href="#" class="promo-mobile__right__link">
+                        <img src="img/mobile/mobile_shopping.png" alt="mobile_shopping">
+                    </a>
+                </div>
+            </div>
+            
+
         </div>
     </section>
 
     <section class="main">
         <div class="container">
-            <div class="offers">
-                <p>Целевые предложения</p>
-                <nav>
-                    <ul class="catalog">
-                        <li class="catalog__item">
-                            <a href="#" class="catalog__link">
-                                Кафе, барам, ресторанам <span>></span>
-                            </a>
-                        </li>
-                        <li class="catalog__item">
-                            <a href="#" class="catalog__link">
-                                Дестким садам и школам <span>></span>
-                            </a>
-                        </li>
-                        <li class="catalog__item">
-                            <a href="#" class="catalog__link">
-                                Таблет-питание <span>></span>
-                            </a>
-                        </li>
-                        <li class="catalog__item">
-                            <a href="#" class="catalog__link">
-                                Для столовых <span>></span>
-                            </a>
-                        </li>
-                        <li class="catalog__item">
-                            <a href="#" class="catalog__link">
-                                Для пищеблоков <span>></span>
-                            </a>
-                        </li>
-                        <li class="catalog__item">
-                            <a href="#" class="catalog__link">
-                                Государственным заказкам <span>></span>
-                            </a>
-                        </li>
-                        <li class="catalog__item">
-                            <a href="#" class="catalog__link">
-                                Для магазинов <span>></span>
-                            </a>
-                        </li>
-                        <li class="catalog__item">
-                            <a href="#" class="catalog__link">
-                                Для войсковых частей <span>></span>
-                            </a>
-                        </li>
-                        <li class="catalog__item">
-                            <a href="#" class="catalog__link">
-                                Все предложения <span>></span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- Slider main container -->
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="portfolio">
-                            <div class="portfolio__head">Портфолио</div>
-                            <div class="portfolio__wrapper">
-                                <div>
-                                    <div class="portfolio__subhead">
-                                        НИИ скорой помощи 
-                                        им. Н.В. Склифосовского
-                                        <span>Оборудование для пищеблоков</span>
-                                    </div>
-                                    <button class="button button__portfolio">
-                                        <a href="#">Подробнее</a>
-                                    </button>
-                                </div>
-                                <div class="portfolio__img">
-                                    <img src="img/catering_equipment.png" alt="catering_equipment">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="portfolio">
-                            <div class="portfolio__head">Портфолио</div>
-                            <div class="portfolio__wrapper">
-                                <div>
-                                    <div class="portfolio__subhead">
-                                        НИИ скорой помощи 
-                                        им. Н.В. Склифосовского
-                                        <span>Оборудование для пищеблоков</span>
-                                    </div>
-                                    <button class="button button__portfolio">
-                                        <a href="#">Подробнее</a>
-                                    </button>
-                                </div>
-                                <div class="portfolio__img">
-                                    <img src="img/catering_equipment.png" alt="catering_equipment">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="portfolio">
-                            <div class="portfolio__head">Портфолио</div>
-                            <div class="portfolio__wrapper">
-                                <div>
-                                    <div class="portfolio__subhead">
-                                        НИИ скорой помощи 
-                                        им. Н.В. Склифосовского
-                                        <span>Оборудование для пищеблоков</span>
-                                    </div>
-                                    <button class="button button__portfolio">
-                                        <a href="#">Подробнее</a>
-                                    </button>
-                                </div>
-                                <div class="portfolio__img">
-                                    <img src="img/catering_equipment.png" alt="catering_equipment">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    ...
+            <div class="main__wrapper">
+                <div class="offers">
+                    <p>Целевые предложения</p>
+                    <nav>
+                        <ul class="catalog">
+                            <li class="catalog__item">
+                                <a href="#" class="catalog__link">
+                                    Кафе, барам, ресторанам <span>></span>
+                                </a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="catalog__link">
+                                    Дестким садам и школам <span>></span>
+                                </a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="catalog__link">
+                                    Таблет-питание <span>></span>
+                                </a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="catalog__link">
+                                    Для столовых <span>></span>
+                                </a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="catalog__link">
+                                    Для пищеблоков <span>></span>
+                                </a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="catalog__link">
+                                    Государственным заказкам <span>></span>
+                                </a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="catalog__link">
+                                    Для магазинов <span>></span>
+                                </a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="catalog__link">
+                                    Для войсковых частей <span>></span>
+                                </a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="catalog__link">
+                                    Все предложения <span>></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination">+</div>
-<!-- 
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <div class="swiper-scrollbar"></div> -->
-            </div>
- 
-            <div class="sale">
-                <div class="sale__gift">
-                    <img src="img/giftbox.png" alt="giftbox">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="portfolio">
+                                <div class="portfolio__head">Портфолио</div>
+                                <div class="portfolio__wrapper">
+                                    <div class="portfolio__wrapper__left">
+                                        <div class="portfolio__subhead">
+                                            НИИ скорой помощи 
+                                            им. Н.В. Склифосовского
+                                            <span>Оборудование для пищеблоков</span>
+                                        </div>
+                                        <button class="button button__portfolio">
+                                            <a href="#">Подробнее</a>
+                                        </button>
+                                    </div>
+                                    <div class="portfolio__img">
+                                        <img src="img/catering_equipment.png" alt="catering_equipment">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio">
+                                <div class="portfolio__head">Портфолио</div>
+                                <div class="portfolio__wrapper">
+                                    <div class="portfolio__wrapper__left">
+                                        <div class="portfolio__subhead">
+                                            <div class="portfolio__subhead__title">
+                                                НИИ скорой помощи им. Н.В. Склифосовского
+                                            </div>
+                                            <span>Оборудование для пищеблоков</span>
+                                        </div>
+                                        <button class="button button__portfolio">
+                                            <a href="#">Подробнее</a>
+                                        </button>
+                                    </div>
+                                    <div class="portfolio__img">
+                                        <img src="img/catering_equipment.png" alt="catering_equipment">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio">
+                                <div class="portfolio__head">Портфолио</div>
+                                <div class="portfolio__wrapper">
+                                    <div class="portfolio__wrapper__left">
+                                        <div class="portfolio__subhead">
+                                            Комбинат питания МФТИ
+                                            <span>Проектирование и комплексное снабжение</span>
+                                        </div>
+                                        <button class="button button__portfolio">
+                                            <a href="#">Подробнее</a>
+                                        </button>
+                                    </div>
+                                    <div class="portfolio__img">
+                                        <img src="img/catering_equipment.png" alt="catering_equipment">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio">
+                                <div class="portfolio__head">Портфолио</div>
+                                <div class="portfolio__wrapper">
+                                    <div class="portfolio__wrapper__left">
+                                        <div class="portfolio__subhead">
+                                            Комбинат питания МФТИ
+                                            <span>Проектирование и комплексное снабжение</span>
+                                        </div>
+                                        <button class="button button__portfolio">
+                                            <a href="#">Подробнее</a>
+                                        </button>
+                                    </div>
+                                    <div class="portfolio__img">
+                                        <img src="img/catering_equipment.png" alt="catering_equipment">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination">+</div>
+    <!-- 
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+    
+                    <div class="swiper-scrollbar"></div> -->
                 </div>
-                <div class="sale__head">Самые низкие цены</div>
-                <div class="sale__subhead">Распродажа</div>
-                <div class="sale__catalog"><a href="#">Каталог распродаж  ></a></div>
+     
+                <div class="sale">
+                    <div class="sale__gift">
+                        <img src="img/giftbox.png" alt="giftbox">
+                    </div>
+                    <div class="sale__head">Самые низкие цены</div>
+                    <div class="sale__subhead">Распродажа</div>
+                    <div class="sale__catalog"><a href="#">Каталог распродаж  ></a></div>
+                </div>
             </div>
         </div>
     </section>
@@ -353,7 +492,7 @@
     </section>
 
     <section class="news">
-        <div class="container">
+        <div class="container-2">
             <div class="news__title">
                 <p>Новости производителей</p>
             </div>
@@ -425,7 +564,7 @@
     </section>
 
     <section class="recommend">
-        <div class="container">
+        <div class="container-2">
             <div class="recommend__head">Рекомендуем</div>
             <div class="recommend__subhead">В этих разделах вы можете получить подробную информацию о пищевом оборудовании
                 для столовых, ресторанов и кафе ведущих производителей.
@@ -433,9 +572,11 @@
             <div class="recommend__wrapper">
                 <div class="recommend__left">
                     <div class="recommend__left__content">
-                        <div class="recommend__left__content__head">rational</div>
-                        <div class="recommend__left__content__subhead">Пароконвектоматы</div>
-                        <div class="recommend__left__content__text">Педантичность и преданность своему делу делает продукцию Rational идеальной для тех, кто ищет надежность и долговечность.</div>
+                        <div class="recommend__left__content__text">
+                            <div class="recommend__left__content__head">rational</div>
+                            <div class="recommend__left__content__subhead">Пароконвектоматы</div>
+                            <div class="recommend__left__content__text">Педантичность и преданность своему делу делает продукцию Rational идеальной для тех, кто ищет надежность и долговечность.</div>
+                        </div>
                         <div href="#" class="recommend__left__content__img">
                             <img src="img/recommend/combi.jpg" alt="combi">
                         </div>
@@ -446,7 +587,7 @@
                         <div href="#" class="recommend__right__up__img">
                             <img src="img/recommend/heating_equipment.png" alt="heating_equipment">
                         </div>
-                        <div class="recommend__right__wrapper">
+                        <div class="recommend__right__up__wrapper">
                             <div class="recommend__right__up__head">Abat</div>
                             <div class="recommend__right__up__subhead">Тепловое 
                                 оборудование</div>
@@ -454,7 +595,7 @@
                         </div>
                     </a>
                     <a href="#" class="recommend__right__down">
-                        <div class="recommend__right__wrapper">
+                        <div class="recommend__right__down__wrapper">
                             <div class="recommend__right__down__head">Abat</div>
                             <div class="recommend__right__down__subhead">Тепловое 
                                 оборудование</div>
@@ -470,17 +611,29 @@
     </section>
 
     <section class="about-company">
-        <div class="container">
+        <div class="container-2">
             <div class="about-company__content">
                 <div class="about-company__content__left">
                     <div class="about-company__content__head">Комплексные решения оснащения столовых и кафе</div>
                     <p>Компания предлагает комплексное оснащение столовых, ресторанов, кафе и баров в Москве. Наши услуги построены по принципу полного цикла обслуживания предприятий общепита и бизнеса HoReCa.</p>
                     <p>Иными словами, мы предлагаем проектирование «под ключ» и постгарантийное обслуживание. География работы компании охватывает всю страну. При этом в каждом регионе мы готовы предложить демократичные цены на профессиональное технологическое оборудование для столовой и оптимальные решения с точки зрения эффективности бизнеса, приемлемым уровнем производительности в условиях ограниченного бюджета.</p>
                     <div class="about-company__content__subhead">Что мы предлагаем</div>
-                    <p>разработку технологического проекта кухни и производственной линии, дизайна ресторанного интерьера;</p>
-                    <p>составление меню согласно концепции и оснащения бара (кафе, столовой);</p>
-                    <p>подбор посуды, текстиля под общий стиль; профессиональное оборудование для кафе, бара и ресторана, большой выбор современных моделей; доставку в любой регион РФ;</p>
-                    <p>монтажные и пуско-наладочные работы; автоматизацию производственного процесса, что позволяет определённое оборудование для бара;</p>
+                    <nav>
+                        <ul>
+                            <li>разработку технологического проекта кухни и производственной линии, дизайна ресторанного интерьера;</li>
+                            <li>составление меню согласно концепции и оснащения бара (кафе, столовой);</li>
+                            <li>подбор посуды, текстиля под общий стиль; профессиональное оборудование для кафе, бара и ресторана, большой выбор современных моделей; доставку в любой регион РФ;</li>
+                            <li>монтажные и пуско-наладочные работы; автоматизацию производственного процесса, что позволяет определённое оборудование для бара;</li>
+                        </ul>
+                    </nav>
+                    <div class="about-company__content__more-info">
+                        <div class="about-company__content__subhead">Этапы оснащения кафе</div>
+                        <p>Независимо от типа объекта, будь то детское кафе или китайский ресторан, последовательность задач при заказе услуги «под ключ» выглядит одинаково.</p>
+                        <p>На первом этапе выбирается подходящее помещение и проводится анализ спроса на подобное заведение. Оценка необходима, если концепция меняется кардинально, либо заведение создаётся «с нуля».</p>
+                        <p>Затем составляется техническое задание, которое учитывает вместимость помещения, формируется общая модель работы и технологический процесс, определяется необходимое технологическое оборудование для ресторана.</p>
+                        <p>Согласно ТЗ, разрабатывается план расположения ресторанного оборудования и его 3D-модель. Этап позволяет выявить неочевидные ошибки, которые в дальнейшем могут привести к нарушению технологии или существенному снижению производительности. После тщательного анализа производятся работы по монтажу и пуско-наладке.</p>
+                        <p>Сложностью в деле создания самостоятельного и эффективного предприятия питания является не столько проблема купить кухонное оборудование для столовой, сколько получить документы проверяющих инстанций. Помимо продажи и проектирования, мы может оказать содействие в получении необходимых разрешений.</p>
+                    </div>
                     <button class="button button__more">+</button>
                 </div>
                 <div class="about-company__content__right">
@@ -506,7 +659,7 @@
     </section>
 
     <section class="contacts">
-        <div class="container">
+        <div class="container-2">
             <div class="contacts__titles">
                 <div class="contacts__titles__list">
                     <p>Информация</p>
@@ -633,14 +786,16 @@
                     </nav>
                 </div>
             </div>
-            <div class="contacts__titles__map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1dd529526a4cbefb94b512ddf19a8c78fa3887ad0d834d0f38dc6e95d288dec0&amp;width=100%25&amp;height=200&amp;lang=ru_RU&amp;scroll=false"></script>
-            </div>
+  
         </div>
     </section>
 
+    <section class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1dd529526a4cbefb94b512ddf19a8c78fa3887ad0d834d0f38dc6e95d288dec0&amp;width=100%25&amp;height=200&amp;lang=ru_RU&amp;scroll=false"></script>
+    </section>
+
     <footer class="footer">
-        <div class="container">
+        <div class="container-2">
             <div class="footer__wrapper">
                 <div class="footer__left">
                     <div class="footer__left__img">
@@ -655,6 +810,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- <a href="#up" class="">
+        <svg class="up" viewBox="0 0 26 26" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M26 0H0V26H26V0ZM4.6593 17.7519L13.1233 10.33L21.5873 17.7519L22.9059 16.2481L13.7826 8.24813L13.1233 7.67L12.464 8.24813L3.3407 16.2481L4.6593 17.7519Z" fill="black"/>
+		</svg>
+    </a> -->
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>

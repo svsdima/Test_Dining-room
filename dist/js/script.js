@@ -97,6 +97,8 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/slider */ "./src/js/modules/slider.js");
 /* harmony import */ var _modules_modals__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modals */ "./src/js/modules/modals.js");
+/* harmony import */ var _modules_showMoreInfo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/showMoreInfo */ "./src/js/modules/showMoreInfo.js");
+
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -104,6 +106,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   Object(_modules_slider__WEBPACK_IMPORTED_MODULE_0__["default"])();
   Object(_modules_modals__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  Object(_modules_showMoreInfo__WEBPACK_IMPORTED_MODULE_2__["default"])('.button__more', '.about-company__content__more-info');
 });
 
 /***/ }),
@@ -139,6 +142,30 @@ const modal = () => {
 
 /***/ }),
 
+/***/ "./src/js/modules/showMoreInfo.js":
+/*!****************************************!*\
+  !*** ./src/js/modules/showMoreInfo.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const showMoreInfo = (trigger, info) => {
+  const btn = document.querySelector(trigger),
+        cards = document.querySelectorAll(info);
+  btn.addEventListener('click', () => {
+    cards.forEach(card => {
+      card.style.display = 'block';
+    });
+    btn.remove();
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (showMoreInfo);
+
+/***/ }),
+
 /***/ "./src/js/modules/slider.js":
 /*!**********************************!*\
   !*** ./src/js/modules/slider.js ***!
@@ -149,6 +176,16 @@ const modal = () => {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 const slider = () => {
+  function swiperHeader(swiper_name) {
+    const wrapper = document.querySelector(swiper_name);
+    new Swiper(wrapper, {
+      spaceBetween: 30,
+      slidesPerView: 11,
+      // autoHeight: auto,
+      spaceBetween: 10
+    });
+  }
+
   function swiper(swiper_name) {
     const wrapper = document.querySelector(swiper_name);
     new Swiper(wrapper, {
@@ -166,6 +203,7 @@ const slider = () => {
   }
 
   swiper('.swiper-container');
+  swiperHeader('.types');
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (slider);

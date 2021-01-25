@@ -1,6 +1,17 @@
 
 
 const slider = () => {
+    function swiperHeader (swiper_name) {
+        const wrapper = document.querySelector(swiper_name);
+
+        new Swiper (wrapper, {
+            spaceBetween: 30,
+            slidesPerView: 11,
+            // autoHeight: auto,
+            spaceBetween: 10,
+            
+        });
+    }
     function swiper (swiper_name) {
         const wrapper = document.querySelector(swiper_name);
 
@@ -19,6 +30,7 @@ const slider = () => {
     }
 
     swiper('.swiper-container');
+    swiperHeader('.types');
 
 };
 

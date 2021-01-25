@@ -1,20 +1,31 @@
 @import 'base/variables';
 @import 'base/fonts';
 @import 'base/buttons';
+@import 'base/swipe';
 
 * {
     font-family: 'MyriadPro';
+    img {
+        width: 100%;
+    }
     
 }
 body {
     background-color: #ebe9e9;
 }
 .container {
-    max-width: 1920px;
+    max-width: 1550px;
     margin: 0 auto;
+    width: 95%;
+}
+.container-2 {
+    max-width: 1415px;
+    margin: 0 auto;
+    width: 95%;
 }
 
 @import 'block/promo';
+@import 'block/promo-mobile';
 @import 'block/main';
 @import 'block/swiper';
 @import 'block/company';
@@ -23,3 +34,5 @@ body {
 @import 'block/about-company';
 @import 'block/contacts';
 @import 'block/footer';
+
+@import 'base/media';

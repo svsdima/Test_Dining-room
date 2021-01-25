@@ -1,9 +1,10 @@
 .about-company {
-    padding: 0 307px 264px 262px;
+    // padding: 0 255px 264px 255px;
+    padding-bottom: 264px;
     &__content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         &__head {
             font-size: 40px;
             font-weight: normal;
@@ -26,9 +27,10 @@
             color: $main_color;
         }
         &__left {
-            width: 831px;
-            height: 516px;
-            p {
+            // width: 831px;
+            // height: 516px;
+            padding-right: 250px;
+            p, li {
                 font-family: $second_font;
                 font-size: 18px;
                 font-weight: 300;
@@ -43,9 +45,12 @@
         &__right {
             
         }
+        &__more-info {
+            display: none;
+        }
     }
     &__logo {
-        margin-top: 100px;
+        // margin-top: 100px;
         &__image {
             width: 151px;
             height: 151px;

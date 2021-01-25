@@ -6,7 +6,8 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 93px 264px 0 262px;
+        // padding: 93px 264px 0 262px;
+        padding-top: 93px;
         &__list {
             p {
                 font-family: $second_font;
@@ -20,10 +21,6 @@
                 color: #777777; 
             }
 
-        }
-        &__map {
-            // width: 1920px;
-            // padding-bottom: 208px;
         }
     }
     &__item {
