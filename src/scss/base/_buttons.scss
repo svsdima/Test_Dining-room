@@ -1,4 +1,5 @@
 .button {
+    border: none;
     a {
         text-decoration: none;
         list-style-type: none;
@@ -36,6 +37,14 @@
         letter-spacing: normal;
         text-align: center;
         color: #ffffff;
+    }
+    &__search {
+        width: 49px;
+        height: 41px;
+        // margin: 0 0 0 770px;
+        padding: 7px 10px 6px;
+        border-radius: 0px 5px 5px 0px;
+        background-color: #ffaf2d;
     }
     &__portfolio {
         width: 129px;
@@ -105,5 +114,19 @@
             background-color: #ffffff;
             margin-bottom: 8px;
         }
+    }
+    &__phone-form {
+        width: 133px;
+        height: 45px;
+        border-radius: 22.5px;
+        background-color: #ffaf2d;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
     }
 }

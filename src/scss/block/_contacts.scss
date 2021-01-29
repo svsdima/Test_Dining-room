@@ -38,7 +38,11 @@
         text-align: left;
         color: #ffffff;
         text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
         a {
+            display: block;
             text-decoration: none;
             color: #ffffff;
         }

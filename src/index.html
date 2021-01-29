@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Столовая.РУ</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
       
 </head>
 <body>
+    <div class="shadow"></div>
     <section id="up" class="promo">
         <div class="container">
             <nav>
@@ -61,23 +63,75 @@
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">
+                        <a href="info@stolovay.ru" class="menu__link">
                             <div class="email">
                                 <img class="email__img" src="img/head/email.png" alt="email">
                                 <div class="email__info">info@stolovay.ru</div>
                             </div>
-                        
                         </a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">
-                            <div class="phone">
-                                <img class="phone__img" src="img/head/phone.png" alt="phone">
-                                <div class="phone__number">
-                                    8 495 790-72-05
+                    <li class="menu__phone">
+                        <div class="phone">
+                            <img class="phone__img" src="img/head/phone.png" alt="phone">
+                            <div class="phone__number">
+                                8 495 790-72-05
+                            </div>
+                        </div>
+                        <div class="menu__phone__popup">
+                            <div class="menu__phone__popup__container">
+                                <button type="button" class="menu__phone__popup__close"><strong>&times;</strong></button>
+                                <div class="menu__phone__popup__left">
+                                    <p class="menu__phone__popup__left__head">
+                                        8 495 790-72-05
+                                    </p>
+                                    <p class="menu__phone__popup__left__subhead">
+                                        Мы принимаем звонки без выходных.
+                                    </p>
+                                    <div class="menu__phone__popup__left__method">
+                                        <p>Выберите способ связи:</p>
+                                        <a href="tel:84957907205">
+                                            <div class="menu__phone__popup__left__method__img">
+                                                <img src="img/back_call/phone.png" alt="phone">
+                                            </div>
+                                            <span>Мобильный</span>
+                                        </a>
+                                        <a href="viber://chat?number=%2B84957907205">
+                                            <div class="menu__phone__popup__left__method__img">
+                                                <img src="img/back_call/viber.png" alt="viber">
+                                            </div>
+                                            <span>Viber</span>
+                                        </a>
+                                        <a href="https://telegram.im/">
+                                            <div class="menu__phone__popup__left__method__img">
+                                                <img src="img/back_call/telegram.png" alt="telegram">
+                                            </div>
+                                            <span>Telegram</span>
+                                        </a>
+                                        <a href="https://wa.me/84957907205">
+                                            <div class="menu__phone__popup__left__method__img">
+                                                <img src="img/back_call/whatsapp.png" alt="whatsapp">
+                                            </div>
+                                            <span>Whatsapp</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu__phone__popup__right">
+                                    <p class="menu__phone__popup__right__head">
+                                        Обратный звонок:
+                                    </p>
+                                    <p class="menu__phone__popup__right__subhead">
+                                        Мы перезвоним вам в течении часа
+                                    </p>
+                                    <form action="phone__form" class="menu__phone__popup__right__form">
+                                        <span class="menu__phone__popup__right__form__text">Имя:</span>
+                                        <input type="text" maxlength="40" class="menu__phone__popup__input req" name="user__name" placeholder="Введите ваше имя">
+                                        <span class="menu__phone__popup__right__form__text">Телефон:</span>
+                                        <input type="text" maxlength="12" class="menu__phone__popup__input req" name="user__phone" placeholder="Введите ваш телефон">
+                                        <button class="button button__phone-form">Отправить</button>
+                                    </form>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -97,10 +151,29 @@
                         <div class="header__search__categories__text">
                             Все
                         <!-- <img src="img/drop-down-arrow.svg" alt="drop-down-arrow"> -->
-                        ::after
-                        </div>    
+                        </div>
+                        <div class="categories">
+                            <p class="categories__header">Выберите категорию:</p>
+                            <nav>
+                                <ul class="categories__item">
+                                    <li class="categories__link">Тепловое</li>
+                                    <li class="categories__link">Холодильное</li>
+                                    <li class="categories__link">Электромеханическое</li>
+                                    <li class="categories__link">Посудомоечное</li>
+                                    <li class="categories__link">Барное</li>
+                                    <li class="categories__link">Хлебопекарное</li>
+                                    <li class="categories__link">Линии раздачи</li>
+                                    <li class="categories__link">Нейтральное</li>
+                                    <li class="categories__link">Для фаст фуда</li>
+                                    <li class="categories__link">Для залов</li>
+                                    <li class="categories__link">Весовое</li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
-                    <input type="text" placeholder="Search">
+                    <div class="header__search__categories__input">
+                        <input type="text" placeholder="Search">
+                    </div>
                     <button class="button button__search">
                         <img src="img/loupe.png" alt="loupe">
                     </button>
@@ -274,17 +347,32 @@
                 </div>
                 <div class="promo-mobile__right">
                     <a href="#" class="promo-mobile__right__link">
-                        <img src="img/mobile/mobile_search.png" alt="mobile_search">
+                        <div class="promo-mobile__right__search">
+                            <img src="img/mobile/mobile_search.png" alt="mobile_search">
+                        </div>
                     </a>
                     <a href="#" class="promo-mobile__right__link">
-                        <img src="img/mobile/mobile_phone.png" alt="mobile_phone">
+                        <div class="promo-mobile__right__phone">
+                            <img src="img/mobile/mobile_phone.png" alt="mobile_phone">
+                        </div>
                     </a>
                     <a href="#" class="promo-mobile__right__link">
-                        <img src="img/mobile/mobile_shopping.png" alt="mobile_shopping">
+                        <div class="promo-mobile__right__shopping">
+                            <img src="img/mobile/mobile_shopping.png" alt="mobile_shopping">
+                        </div>
                     </a>
                 </div>
             </div>
-            
+            <div class="promo-mobile__search-panel">
+                <div class="promo-mobile__search-panel__wrapper">
+                    <div class="promo-mobile__search-panel__input">
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <button class="button button__search">
+                        <img src="img/loupe.png" alt="loupe">
+                    </button>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -662,8 +750,8 @@
         <div class="container-2">
             <div class="contacts__titles">
                 <div class="contacts__titles__list">
-                    <p>Информация</p>
-                    <nav>
+                    <p class="contacts__titles__list__header">Информация</p>
+                    <nav class="contacts__wrapper">
                         <ul class="contacts__item">
                             <li class="contacts__link">
                                 <a href="#">Компания</a>
@@ -699,8 +787,8 @@
                     </nav>
                 </div>
                 <div class="contacts__titles__list">
-                    <p>Оборудование</p>
-                    <nav>
+                    <p class="contacts__titles__list__header">Оборудование</p>
+                    <nav class="contacts__wrapper">
                         <ul class="contacts__item">
                             <li class="contacts__link">
                                 <a href="#">Тепловое</a>
@@ -739,8 +827,8 @@
                     </nav>
                 </div>
                 <div class="contacts__titles__list">
-                    <p>Предложения</p>
-                    <nav>
+                    <p class="contacts__titles__list__header">Предложения</p>
+                    <nav class="contacts__wrapper">
                         <ul class="contacts__item">
                             <li class="contacts__link">
                                 <a href="#">Кафе, барам, ресторанам</a>
@@ -770,8 +858,8 @@
                     </nav>
                 </div>
                 <div class="contacts__titles__list">
-                    <p>Контакты</p>
-                    <nav>
+                    <p class="contacts__titles__list__header">Контакты</p>
+                    <nav class="contacts__wrapper">
                         <ul class="contacts__item">
                             <li class="contacts__link">8 495 150-31-71</li>
                             <li class="contacts__link">8 800 500 43 44</li>

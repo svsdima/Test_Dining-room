@@ -4,6 +4,7 @@ const showMoreInfo = (trigger, info) => {
 
     btn.addEventListener('click', () => {
         cards.forEach(card => {
+            card.classList.add('animated', 'fadeInUp');
             card.style.display = 'block';
         });
         btn.remove();

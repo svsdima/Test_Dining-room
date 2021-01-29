@@ -1,3 +1,4 @@
+
 @import 'base/variables';
 @import 'base/fonts';
 @import 'base/buttons';
@@ -8,7 +9,6 @@
     img {
         width: 100%;
     }
-    
 }
 body {
     background-color: #ebe9e9;
@@ -36,3 +36,22 @@ body {
 @import 'block/footer';
 
 @import 'base/media';
+
+
+.active-style {
+    display: block;
+}
+.active-content {
+    display: block;
+}
+.status {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
