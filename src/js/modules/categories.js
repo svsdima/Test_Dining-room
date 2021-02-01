@@ -8,14 +8,14 @@ const categories = () => {
                 modal.classList.add('animated', 'fadeIn');
                 modal.classList.toggle('active-style');
                 // modal.style.display= 'block';
-                document.body.style.overflow = "hidden";
-                document.body.style.marginRight = `${scroll}px`;
             });
         });
     };
 
     triggerCategories('.header__search__categories', '.categories');
     triggerCategories('.promo-mobile__right__search', '.promo-mobile__search-panel');
+    triggerCategories('.promo-mobile__right__phone', '.menu__phone__popup');
+    triggerCategories('.button__hamburger', '.promo');
 };
 
 export default categories;

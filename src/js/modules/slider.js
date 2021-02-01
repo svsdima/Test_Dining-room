@@ -30,7 +30,6 @@ const slider = () => {
     }
 
     swiper('.swiper-container');
-    swiperHeader('.types');
 
 };
 

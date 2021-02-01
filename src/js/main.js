@@ -16,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
     slider();
     modal();
     showMoreInfo('.button__more', '.about-company__content__more-info');
+    accordion('.promo-mobile__equipment', '.promo-mobile__categories');
     accordion('.contacts__titles__list__header', '.contacts__wrapper');
     form(modalState);
     categories();

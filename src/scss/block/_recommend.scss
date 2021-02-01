@@ -33,9 +33,13 @@
         margin-top: 65px;
     }
     &__left {
+        width: 45%;
         &__content {
+            padding: 30px;
             max-width: 595px;
-            max-height: 745px;
+            max-height: 805px;
+            overflow: hidden;
+            margin-right: 10px;
             // padding: 69px 75px 0 87px;
             background-color: #ffffff;
             text-decoration: none;
@@ -77,6 +81,7 @@
                 color: #777777;
             }
             &__img {
+                width: 450px;
                 height: 60%;
                 // height: 481px;
                 margin: 0 auto;
@@ -85,18 +90,21 @@
         }
     }
     &__right {
+        width: 55%;
         &__up {
             display: flex;
             justify-content: space-between;
             align-items: center;
             max-width: 784px;
             height: 420px;
-            // padding: 7px 143px 0 0;
+            overflow: hidden;
             background-color: #232323;
             text-decoration: none;
             position: relative;
+            padding: 30px;
             &__img {
-                width: 40%;
+                width: 420px;
+                margin-left: -190px;
             }
             &__wrapper {
                 width: 60%;
@@ -111,6 +119,7 @@
                 letter-spacing: normal;
                 text-align: left;
                 color: #ffffff;
+                text-transform: uppercase;
             }
             &__subhead {
                 font-size: 30px;
@@ -141,10 +150,12 @@
             max-width: 786px;
             height: 316px;
             background-color: #ffffff;
-            // padding: 96px 341.4px 67px 62.8px;
-            padding-top: 96px;
-            padding-bottom: 40px;
+            overflow: hidden;
+            // padding: 5px 0px 0px 10px;
+            padding: 30px;
+            margin-top: 10px;
             text-decoration: none;
+            position: relative;
             &__head {
                 font-family: $second_font;
                 font-size: 20px;
@@ -155,6 +166,7 @@
                 letter-spacing: normal;
                 text-align: left;
                 color: $main_color;
+                text-transform: uppercase;
             }
             &__subhead {
                 font-size: 30px;
@@ -181,10 +193,8 @@
                 width: 60%;
             }
             &__img {
-                width: 40%;
-                img {
-                    width: 100%;
-                }
+                width: 420px;
+                margin-left: 100px;
             }
         }
     }

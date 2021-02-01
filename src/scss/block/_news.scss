@@ -1,6 +1,9 @@
 .news {
     // padding: 0 255px 172px 255px;
     padding-bottom: 172px;
+    img {
+        width: 100%;
+    }
     &__title {
         font-size: 40px;
         font-weight: normal;
@@ -17,6 +20,7 @@
         align-items: flex-start;
     }
     &__left {
+        margin-right: 100px;
         &__item {
             max-width: 489px;
             height: 305px;

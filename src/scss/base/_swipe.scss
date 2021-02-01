@@ -1,3 +1,10 @@
+.swiper-container {
+    width: 40%;
+}
+.swiper-slide {
+    position: relative;
+    width: 100%;
+}
 .swiper-pagination-bullet {
     background: #ffffff;
     &-active {

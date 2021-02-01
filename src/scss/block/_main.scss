@@ -8,7 +8,8 @@
         padding-bottom: 20px;
     }
     .offers {
-        width: 304px;
+        // width: 304px;
+        width: 35%;
         // height: 476px;
         padding-left: 0;
         background-color: #ffffff;
@@ -21,7 +22,7 @@
             font-style: normal;
             letter-spacing: normal;
             text-align: left;
-            color: #ffaf2d;
+            color: $second_color;
         }
     }
     .catalog {
@@ -38,9 +39,8 @@
         &__link {
             display: flex;
             justify-content: space-between;
-            font-family: $second_font;
             font-size: 15px;
-            font-weight: 300;
+            font-weight: normal;
             font-stretch: normal;
             font-style: normal;
             line-height: 2.81;
@@ -48,13 +48,20 @@
             text-align: left;
             color: #303030;
             text-decoration: none;
-            span {
-                padding-right: 10px;
+            &::after {
+                content: ">";
+                float: right;
+                margin-right: 15px;
+                font-size: 15px;
+            }
+            &:hover {
+                color: $second_color;
             }
         }
     }
     .portfolio {
         // width: 902px;
+        position: relative;
         height: 476px;
         margin-left: 20px;
         padding: 60px 30px;
@@ -64,6 +71,7 @@
             justify-content: flex-start;
             align-items: center;
             &__left {
+                z-index: 2;
                 width: 60%;
             }
         }
@@ -90,6 +98,7 @@
             letter-spacing: normal;
             text-align: left;
             color: #f3f1f1;
+            margin-top: 75px;
             span {
                 font-family: $second_font;
                 font-size: 18px;
@@ -98,7 +107,10 @@
             }
         }
         &__img {
-            width: 40%;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            // width: 40%;
             // width: 256px;
             // height: 357px;
             img {
@@ -107,6 +119,11 @@
         }
     }
     .sale {
+        position: relative;
+        &__wrapper {
+            position: absolute;
+            bottom: 20px;
+        }
         width: 30%;
         height: 476px;
         // margin: 185px 189px 20px 21px;
@@ -114,14 +131,17 @@
         padding-top: 219px;
         padding-bottom: 52px;
         border-radius: 2px;
-        border: solid 2px #ffaf2d;
+        border: solid 2px $second_color;
         background-color: #ffffff;
         padding: 0 0 0 30px;
         margin-left: 21px;
         &__gift {
-            padding-top: 219px;
+            // padding-top: 219px;
             width: 70px;
             height: 86px;
+            img {
+                width: 100%;
+            }
         }
         &__head {
             margin-top: 18px;
@@ -138,18 +158,16 @@
         }
         &__catalog {
             margin-top: 20px;
-            a {
-                font-family: $second_font;
-                font-size: 18px;
-                font-weight: 300;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.33;
-                letter-spacing: normal;
-                text-align: left;
-                color: #ffaf2d;
-                text-decoration: none;
-            }
+            font-family: $second_font;
+            font-size: 18px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: left;
+            color: $second_color;
+            text-decoration: none;
         }
     }
 

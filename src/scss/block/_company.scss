@@ -1,4 +1,7 @@
 .company {
+    img {
+        width: 100%;
+    }
     .wrapper {
         // padding: 0 188px 174px 186px;
         padding-bottom: 174px;
@@ -37,7 +40,7 @@
             font-stretch: normal;
             font-style: normal;
             letter-spacing: normal;
-            text-align: left;
+            text-align: center;
             color: #232323;
             text-decoration: none;
         }
