@@ -114,10 +114,8 @@
         width: 802px;
       }
     .equipment {
-        .types {
-            &__link {
-                font-size: 12px;
-            }
+        &__link {
+            font-size: 12px;
         }
     }
 
@@ -173,13 +171,8 @@
         }
     }
     .equipment {
-        .types {
-            &__item {
-
-            }
-            &__link {
-                font-size: 10px;
-            }
+        &__link {
+            font-size: 10px;
         }
     }
     .main {
@@ -872,6 +865,7 @@
 
 @media (max-width: 375px) {
     .promo {
+        width: 70%;
         .menu {
             &__link {
                 font-size: 22px;

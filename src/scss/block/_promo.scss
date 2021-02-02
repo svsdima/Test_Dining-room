@@ -404,18 +404,19 @@
 .equipment {
     background-color: #ffffff;
     margin-top: 14px;
-}
-.types {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: #ffffff;
-    // padding: 9px 189px 11px 188px;
-    
-    padding-top: 9px;
-    padding-bottom: 11px;
-    padding-left: 0;
-    // max-height: 130px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: #ffffff;
+        // padding: 9px 189px 11px 188px;
+        
+        padding-top: 9px;
+        padding-bottom: 11px;
+        padding-left: 0;
+        // max-height: 130px;
+
+    }
     &__item {
         display: block;
         // max-width: 58px;
@@ -448,6 +449,7 @@
         }
     }
 }
+
 .categories {
     display: none;
     position: absolute;

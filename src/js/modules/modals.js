@@ -40,7 +40,6 @@ const modal = () => {
         closeModal(shadow);
     }
     
-    bindModal('.button__search', '.types');
     bindModal('.menu__phone', '.menu__phone__popup');
     bindModal('.promo-mobile__right__phone', '.promo-mobile__popup');
     
