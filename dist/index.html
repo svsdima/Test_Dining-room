@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="shadow"></div>
-    <section id="up" class="promo">
+    <div id="up" class="promo">
         <div class="container">
             <nav>
                 <ul class="menu">
@@ -137,7 +137,7 @@
             </nav>
             <button class="button button__copy">Скопировать</button>
         </div>
-    </section>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
@@ -146,7 +146,7 @@
                         <img src="img/logo_header.png" alt="logo_header">
                     </a>
                 </div>
-                <form class="header__search" action="">
+                <form class="header__search" action="/search">
                     <div class="header__search__categories">
                         <div class="header__search__categories__text">
                             Все
@@ -206,7 +206,7 @@
             </div>
         </div>
     </header>
-    <section class="equipment">
+    <div class="equipment">
         <div class="container">
             <nav>
                 <ul class="types">
@@ -268,11 +268,11 @@
                 </ul>
             </nav>
         </div>
-    </section>
+    </div>
         
     
 
-    <section class="promo-mobile">
+    <div class="promo-mobile">
         <div class="container-2">
             <div class="promo-mobile__wrapper">
                 <div class="promo-mobile__left">
@@ -394,9 +394,9 @@
             </div>
 
         </div>
-    </section>
+    </div>
 
-    <section class="main">
+    <div class="main">
         <div class="container">
             <div class="main__wrapper">
                 <div class="offers">
@@ -467,9 +467,9 @@
                                             </div>
                                             <span>Оборудование для пищеблоков</span>
                                         </div>
-                                        <button class="button button__portfolio">
-                                            <a href="#">Подробнее</a>
-                                        </button>
+                                        <a href="#" class="button button__portfolio">
+                                            <span>Подробнее</span>
+                                        </a>
                                     </div>
                                     <div class="portfolio__img">
                                         <img src="img/catering_equipment.png" alt="catering_equipment">
@@ -488,9 +488,9 @@
                                             </div>
                                             <span>Оборудование для пищеблоков</span>
                                         </div>
-                                        <button class="button button__portfolio">
-                                            <a href="#">Подробнее</a>
-                                        </button>
+                                        <a href="#" class="button button__portfolio">
+                                            <span>Подробнее</span>
+                                        </a>
                                     </div>
                                     <div class="portfolio__img">
                                         <img src="img/catering_equipment.png" alt="catering_equipment">
@@ -509,9 +509,9 @@
                                             </div>
                                             <span>Оборудование для пищеблоков</span>
                                         </div>
-                                        <button class="button button__portfolio">
-                                            <a href="#">Подробнее</a>
-                                        </button>
+                                        <a href="#" class="button button__portfolio">
+                                            <span>Подробнее</span>
+                                        </a>
                                     </div>
                                     <div class="portfolio__img">
                                         <img src="img/catering_equipment.png" alt="catering_equipment">
@@ -530,9 +530,9 @@
                                             </div>
                                             <span>Оборудование для пищеблоков</span>
                                         </div>
-                                        <button class="button button__portfolio">
-                                            <a href="#">Подробнее</a>
-                                        </button>
+                                        <a href="#" class="button button__portfolio">
+                                            <span>Подробнее</span>
+                                        </a>
                                     </div>
                                     <div class="portfolio__img">
                                         <img src="img/catering_equipment.png" alt="catering_equipment">
@@ -541,13 +541,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- If we need pagination -->
                     <div class="swiper-pagination">+</div>
-    <!-- 
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-    
-                    <div class="swiper-scrollbar"></div> -->
                 </div>
      
                 <div class="sale">
@@ -562,9 +556,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="company">
+    <div class="company">
         <div class="container">
             <div class="wrapper">
                 <nav>
@@ -603,9 +597,9 @@
                 </nav>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="news">
+    <div class="news">
         <div class="container-2">
             <div class="news__title">
                 <p>Новости производителей</p>
@@ -675,9 +669,9 @@
                 <a href="#" class="button button__news">Все новости</a>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="recommend">
+    <div class="recommend">
         <div class="container-2">
             <div class="recommend__head">Рекомендуем</div>
             <div class="recommend__subhead">В этих разделах вы можете получить подробную информацию о пищевом оборудовании
@@ -685,20 +679,20 @@
             </div>
             <div class="recommend__wrapper">
                 <div class="recommend__left">
-                    <div class="recommend__left__content">
+                    <a href="#" class="recommend__left__content">
                         <div class="recommend__left__content__text">
                             <div class="recommend__left__content__head">rational</div>
                             <div class="recommend__left__content__subhead">Пароконвектоматы</div>
                             <div class="recommend__left__content__text">Педантичность и преданность своему делу делает продукцию Rational идеальной для тех, кто ищет надежность и долговечность.</div>
                         </div>
-                        <div href="#" class="recommend__left__content__img">
+                        <div class="recommend__left__content__img">
                             <img src="img/recommend/combiner.jpg" alt="combi">
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="recommend__right">
                     <a href="#" class="recommend__right__up">
-                        <div href="#" class="recommend__right__up__img">
+                        <div class="recommend__right__up__img">
                             <img src="img/recommend/heating_equipment.png" alt="heating_equipment">
                         </div>
                         <div class="recommend__right__up__wrapper">
@@ -714,16 +708,16 @@
                             <div class="recommend__right__down__subhead">Холодильные столы</div>
                             <div class="recommend__right__down__text">Многофункциональность оборудования позволяет оптимизировать пространство на кухне, сделать работу персонала максимально удобной и эффективной.</div>
                         </div>
-                        <div href="#" class="recommend__right__down__img">
+                        <div class="recommend__right__down__img">
                             <img src="img/recommend/refrigerated_tables.png" alt="refrigerated_tables">
                         </div>
                     </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="about-company">
+    <div class="about-company">
         <div class="container-2">
             <div class="about-company__content">
                 <div class="about-company__content__left">
@@ -769,9 +763,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="contacts">
+    <div class="contacts">
         <div class="container-2">
             <div class="contacts__titles">
                 <div class="contacts__titles__list">
@@ -901,11 +895,11 @@
             </div>
   
         </div>
-    </section>
+    </div>
 
-    <section class="map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1dd529526a4cbefb94b512ddf19a8c78fa3887ad0d834d0f38dc6e95d288dec0&amp;width=100%25&amp;height=200&amp;lang=ru_RU&amp;scroll=false"></script>
-    </section>
+    <div class="map">
+        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1dd529526a4cbefb94b512ddf19a8c78fa3887ad0d834d0f38dc6e95d288dec0&amp;width=100%25&amp;height=200&amp;lang=ru_RU&amp;scroll=false"></script>
+    </div>
 
     <footer class="footer">
         <div class="container-2">

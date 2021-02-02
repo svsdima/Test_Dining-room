@@ -47,6 +47,7 @@
         background-color: #ffaf2d;
     }
     &__portfolio {
+        display: block;
         width: 129px;
         height: 35px;
         margin-top: 66px;
@@ -54,13 +55,15 @@
         // padding: 10px 21px 8px;
         border-radius: 17.5px;
         background-color: #ffaf2d;
-        a {
+        text-decoration: none;
+        text-align: center;
+        span {
             font-weight: normal;
             font-stretch: normal;
             font-style: normal;
             line-height: 2.22;
             letter-spacing: normal;
-            text-align: left;
+            text-align: center;
             color: #ffffff;
         }
         

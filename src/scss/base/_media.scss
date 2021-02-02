@@ -637,6 +637,20 @@
             }
         }
     }
+    .main {
+        .sale {
+            padding-left: 40px;
+        }
+    }
+    .recommend {
+        &__right {
+            &__up {
+                &__img {
+                    margin-left: -260px;
+                }
+            }
+        }
+    }
     .footer {
         &__left {
             &__head {
@@ -743,6 +757,15 @@
         }
 
     }
+    .recommend {
+        &__right {
+            &__down {
+                &__img {
+                    margin-left: 50px;
+                }
+            }
+        }
+    }
     .about-company {
         &__content {
             &__head {
@@ -750,6 +773,9 @@
             }
             &__subhead {
                 font-size: 35px;
+            }
+            &__right {
+                margin-left: 30px;
             }
         }
     }
@@ -845,6 +871,50 @@
 }
 
 @media (max-width: 375px) {
+    .promo {
+        .menu {
+            &__link {
+                font-size: 22px;
+            }
+        }
+    }
+    .promo-mobile {
+        &__text {
+            &__header {
+                font-size: 26px;
+            }
+            &__subheader {
+                font-size: 13px;
+            }
+        }
+    }
+    .recommend {
+        &__right {
+            &__up {
+                &__img {
+                    margin-left: -295px;
+                }
+            }
+        }
+    }
+    .main {
+        .sale {
+            padding-left: 30px;
+            &__subhead {
+                font-size: 48px;
+            }
+            &__catalog {
+                font-size: 28px;
+            }
+        }
+    }
+    .about-company {
+        &__content {
+            &__subhead {
+                font-size: 32px;
+            }
+        }
+    }
     .footer {
         &__left {
             &__head {
@@ -860,6 +930,20 @@
         }
         &__right {
             font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .main {
+        .sale {
+            padding-left: 20px;
+            &__subhead {
+                font-size: 46px;
+            }
+            &__catalog {
+                font-size: 25px;
+            }
         }
     }
 }
